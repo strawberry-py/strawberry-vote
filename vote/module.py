@@ -83,7 +83,7 @@ class Vote(commands.Cog):
 
         for line in options_str.splitlines():
             try:
-                (emoji_str, description) = line.split(maxsplit=1)
+                emoji_str, description = line.split(maxsplit=1)
             except ValueError:
                 await ctx.reply(
                     _(ctx, "Option `{option}` is in incorrect format.").format(
